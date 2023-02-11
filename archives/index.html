@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="photos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="photos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="photos/favicon-16x16.png">
+</head>
+<body>
+    <main>
+        <header>
+            <a class="header-txt" href="#">Rapo as<img src="photos/gratispng-logo.png" alt=""></a>
+            <nav>
+                <ul type="none">
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#races">Raças</a></li>
+                    <li><a href="#curiosities">Curiosidades</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero" id="hero">
+            <h1 class="hero-txt">Rapo as<img src="photos/gratispng-logo.png" alt=""></h1>
+            <h2 class="hero-sub">Animais Fantásticos</h2>
+        </section>
+        <section class="content">
+            <div class="glass">
+                <section class="about" id="about">
+                    <div class="glass-infos">
+                        <h1>Sobre</h1>
+                        <ul type="none">
+                            <li>São mamíferos pertencentes à mesma família de cães(canidae), lobos e coiotes.
+                                 São conhecidas como raposas verdadeiras aquelas do gênero Vulpes.</li>
+                            <li>Tem uma aparência que lembra a de um cachorro, com focinho pontiagudo e orelhas eretas e pontudas.</li>
+                            <li>São animais onívoros(se alimentam de frutos, sementes, roedores e lebres.)</li>
+                            <li>As raposas vivem em todos os continentes, exceto a Antártida, já que é frio demais para sua existência.</li>
+                            <li>Na natureza, a expectativa de vida típica de uma raposa é de um a três anos, embora os indivíduos possam viver até dez anos.</li>
+                            <li>Algumas raças vivem em pequenos grupos familiares outras vivem solitárias</li>
+                        </ul>
+
+                    </div>
+                    <div class="glass-photo">
+                        <img src="photos/pexels-sit.jpg">
+                    </div>
+                </section>
+                <section class="races" id="races">
+                    <div class="slide-show">
+                        <button class="back slideBtn" onclick="prev()"><</button>
+                        <img src="photos/pexels-fox.jpg" alt="sit fox" id="raposa-vemelha" class="slide">
+                        <img src="photos/pexels-artico.jpg" alt="sit fox" id="raposa-do-artico" class="slide">
+                        <img src="photos/veloz.jpg" alt="sit fox" id="raposa-veloz" class="slide">
+                        <img src="photos/ana.jpg" alt="sit fox" id="raposa-ana" class="slide">
+                        <img src="photos/pexels-feneco.jpg" alt="sit fox" id="raposa-feneco" class="slide">
+                        <img src="photos/cinzenta.jpg" alt="sit fox" id="raposa-cinzenta" class="slide">
+                        <button class="front slideBtn" onclick="next()">></button>
+                        <h1 class="tipo">Raposa-Vermelha</h1>
+                        <h1 class="tipo">Raposa-do-Artico</h1>
+                        <h1 class="tipo">Raposa-Veloz</h1>
+                        <h1 class="tipo">Raposa-Anã</h1>
+                        <h1 class="tipo">Feneco</h1>
+                        <h1 class="tipo">Raposa-Cinzenta</h1>
+                    </div>
+                    <div class="slide-infos">
+                        <h1>Raças</h1>
+                        <ul type="none" class="list">
+                            <li>Vulpes Vulpes é a raça mais popular das raposas, seu nome se dá pela sua pelagem laranja-avermelhada.</li>
+                            <li>Elas têm uma distribuição quase global. Podemos encontrá-las em todo o hemisfério norte, em montanhas, planícies, florestas, praias e até desertos ou áreas congeladas.</li>
+                            <li>São animais solitários, que só se unem durante a época de reprodução, que ocorre durante os meses de inverno.</li>
+                        </ul>
+                        <ul type="none" class="list">
+                            <li>A raposa-do-ártico é conhecida por sua espetacular pelagem invernal, de tom branco imaculado.</li>
+                            <li>Estão distribuída por todo o Pólo Norte, do Canadá até a Sibéria, sendo um dos poucos animais que sobrevivem a temperaturastão baixas.</li>
+                            <li>Também são solitários, a época de reprodução dura praticamente todo o ano, exceto nos meses de julho e agosto.</li>
+                        </ul>
+                        <ul type="none" class="list">
+                            <li>A raposa veloz pode parecer um pouco com a raposa-vermelha, pois sua pelagem também é laranja, mas de uma tonalidade mais acastanhada com algumas manchas pretas e amarelas.</li>
+                            <li>Se distribui por toda a América do Norte, Estados Unidos e Canadá. É um animal do deserto e das planícies, onde se desenvolve muito bem.</li>
+                            <li>São as fêmeas que defendem um território, e os machos visitam esses territórios apenas durante a época de reprodução.</li>       
+                        </ul>
+                        <ul type="none" class="list">
+                            <li>A raposa-anã tem uma aparência um pouco diferente dos outros tipos de raposas. Possui um corpo muito fino e esbelto, de cor cinza-avermelhada, com a ponta da cauda preta e grandes orelhas.</li>
+                            <li>Está distribuída por áreas de pradaria árida no sudoeste dos Estados Unidos e do México.</li>
+                            <li>Sua época de reprodução é centrada nos meses de outubro e novembro. Nesta espécie, o casal reprodutor pode acasalar por vários anos consecutivos ou mudar a cada temporada.</li>       
+                        </ul>
+                        <ul type="none" class="list">
+                            <li>O feneco, também conhecido como raposa-do-deserto, tem uma cara muito característica, com olhos muito pequenos e orelhas exageradamente grandes. </li>
+                            <li>Está distribuído por todo o Norte da África, habitando o deserto do Saara, e também pode ser encontrado na Síria, Iraque e Arábia Saudita.</li>
+                            <li>Se reproduz durante os meses de março e abril, sendo que o cuidado parental dos filhotes é realizado tanto pela fêmea quanto pelo macho.</li>       
+                        </ul>
+                        <ul type="none" class="list">
+                            <li>Apesar do nome, essas raposas não são cinzentas, mas sua pelagem alterna pelos pretos e brancos, criando uma aparência de cinza.</li>
+                            <li>Estão distribuídas por quase todo o continente americano, do Canadá à Venezuela. Uma das características mais marcantes desta espécie de raposa é que ela é capaz de subir em árvores, graças às suas garras fortes e afiadas.</li>
+                            <li>A época de reprodução ocorre durante os meses mais quentes do ano. Quando duas raposas-cinzentas se acasalam, elas o farão pelo resto de suas vidas.</li>       
+                        </ul>
+                    </div>
+                </section>
+                <section class="curiosities" id="curiosities">
+                        <div class="curio-infos">
+                            <h1>Curiosidades</h1>
+                                <ul type="none" class="curio-txt">
+                                    <li>As raposas tem uma calda equivalente ao tamanho de 1/3 do seu corpo, devido a esse tamanho elas a utilizam para se aquecer se envolvendo por elas.</li>  
+                                    <li><img src="photos/pexels-sleeping.jpg" alt=""></li>           
+                                    <li>As raposas-do-artico chegam a aguentar até -50°C. E se camuflam muito bem na neve devido a sua pelagem totalment branca.</li>
+                                    <li><img src="photos/pexels-artico.jpg" alt=""></li>
+                                </ul>
+                                <ul type="none" class="curio-txt">
+                                    <li>As raposas estão entre os 10 animais mais rápidos do mundo, por exemplo as raposas-velozes podem chegar até 68km/h em um sprint.</li>  
+                                    <li><img src="photos/veloz.jpg" alt=""></li>           
+                                    <li>As raposas são muito atléticas, por exemplo as raposas vermelhas podem chegar a pular obstáculos de até 2 metros de altura.</li>
+                                    <li><img src="photos/jumping.jpg" alt=""></li>
+                                </ul>
+                                <ul type="none" class="curio-txt">
+                                    <li>As raposas caçam dando saltos para pegar a presa verticalmente com os dentes.</li>  
+                                    <li><img src="photos/foxhunting.jpg" alt=""></li>           
+                                    <li>No jogo minecraft não é diferente elas pulam para agarrar suas presas.</li>
+                                    <li><img src="photos/fox-minecraft.jpg" alt=""></li>
+                                </ul>
+                                <ul type="none" class="curio-txt">
+                                    <li>Afinal What does the fox say? Você já deve ter ouvido essa música em algum lugar e ficou se pergutando o porque da música. A princípio a música ia ser só um comercial feito por dois irmãos. Mas tomou uma proporção mundial.</li>  
+                                    <li><img src="photos/whatdo.jpg" alt=""></li>
+                                    <li>Mas afinal oque será que a raposa diz... As raposas são capazes de emitir mais de 40 sons diferentes similares a latidos, já que são da família dos canideos.</li>
+                                </ul>
+                        </div>
+                        <div class="curio-btns">
+                            <button class="curio-btn" onclick="curioShow(0)">Curiosidade 01</button>
+                            <button class="curio-btn" onclick="curioShow(1)">Curiosidade 02</button>
+                            <button class="curio-btn" onclick="curioShow(2)">Curiosidade 03</button>
+                            <button class="curio-btn" onclick="curioShow(3)">Curiosidade 04</button>
+                        </div>
+                </section>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
